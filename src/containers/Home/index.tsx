@@ -1,14 +1,14 @@
 import React from 'react';
 import { ThemeProvider, DefaultTheme } from 'styled-components'
 
-import GlobalStyle from './styles/global'
-import light from './styles/themes/light'
-import dark from './styles/themes/dark'
+import GlobalStyle from '../../styles/global'
+import light from '../../styles/themes/light'
+import dark from '../../styles/themes/dark'
 
-import Header from './components/Header'
-import usePersistedState from './utils/usePersistedState';
+import Header from '../../components/Header'
+import usePersistedState from '../../utils/usePersistedState';
 
-const App = () => {
+const Home = () => {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
 
   const toggleTheme = () => {
@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
+      <div className="Home">
         <GlobalStyle />
         <Header toggleTheme={toggleTheme} />
       </div>
@@ -25,4 +25,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default Home;
