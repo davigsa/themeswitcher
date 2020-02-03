@@ -1,5 +1,8 @@
+# Theme Switcher 🧙🏻‍♂️
 
-## Available Scripts
+A Typescript project initialized with create react app that change interface theme between `light` and `dark` options and save than in localstorage.
+
+## Available Scripts 🏃🏻
 
 In the project directory, you can run:
 
@@ -11,8 +14,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## Libs
 
 ### Polished 
- 
-Used to edit colors in the project.
-
 ### Styled components
 ### React Switch
